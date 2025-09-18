@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react'; // 1. Import useCallback
 import "../css/ResultsPage.css";
 import header from "../assets/header.png";
 import captachadata from '../CaptachaData';
@@ -12,29 +12,30 @@ const ResultPage = () => {
   const navigate = useNavigate();
   const [usnInput, setUsnInput] = useState('');
   const [error, setError] = useState('');
-  const [studentResult, setStudentResult] = useState(null);
+  // const [studentResult, setStudentResult] = useState(null); // 🧹 2. REMOVED: This state is not used
 
   const getRandomCaptcha = () => {
     const randomIndex = Math.floor(Math.random() * captachadata.length);
     return captachadata[randomIndex];
   };
 
-  useEffect(() => {
-    loadNewCaptcha();
-  }, []);
-
-  const loadNewCaptcha = () => {
+  // ✅ 3. WRAP this function in useCallback
+  const loadNewCaptcha = useCallback(() => {
     const newCaptcha = getRandomCaptcha();
     setCurrentCaptcha(newCaptcha);
     setUserInput('');
-  };
+  }, []); // Note the empty dependency array here
+
+  // Load random captcha on component mount
+  useEffect(() => {
+    loadNewCaptcha();
+  }, [loadNewCaptcha]); // ✅ 4. ADD loadNewCaptcha as a dependency
 
   const validateCaptcha = () => {
     if (!currentCaptcha || !userInput.trim()) {
       setError('Please fill out this field.');
       return false;
     }
-    
     if (userInput.toLowerCase().trim() === currentCaptcha.value.toLowerCase().trim()) {
       return true;
     } else {
@@ -45,7 +46,7 @@ const ResultPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setStudentResult(null);
+    // setStudentResult(null); // 🧹 5. REMOVED: No longer needed
     setError('');
 
     if (!validateCaptcha()) {
@@ -68,7 +69,7 @@ const ResultPage = () => {
       setError('No such USN found.');
     }
   };
-// adjfkajdkfa;lkdf;l
+
   const handleCancel = (event) => {
     event.preventDefault();
     setUserInput('');

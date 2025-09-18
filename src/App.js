@@ -1,11 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-// import VTUResultPortal from './components/VTUResultPortal';
-// import ResultDisplay from './components/ResultDisplay';
-// import About from './components/About';
-// import Contact from './components/Contact';
-// import NotFound from './components/NotFound';
-// import './App.css';
+
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 import ResultPage from './pages/ResultPage';
 import Result from './pages/Result';
 function App() {
