@@ -68,7 +68,7 @@ const ResultPage = () => {
       setError('No such USN found.');
     }
   };
-
+// adjfkajdkfa;lkdf;l
   const handleCancel = (event) => {
     event.preventDefault();
     setUserInput('');
@@ -82,7 +82,7 @@ const ResultPage = () => {
       <div className="header row">
         <img src={header} alt="" className='header_img' />
       </div>
-
+{/* kjadfklnakfm */}
       <div className="result">
         <div className="row2 row">
           <div className="text_container">
@@ -142,6 +142,8 @@ const ResultPage = () => {
                 {error}
               </div>
             )}
+
+
 
             <div className="button_container">
               <button 
