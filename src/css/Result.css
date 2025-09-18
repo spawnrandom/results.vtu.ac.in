@@ -1,0 +1,612 @@
+@font-face {
+  font-family: 'Gubbi';
+  src: url('../Gubbi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.kannda_texth,
+.kannda_textm {
+  font-family: 'Gubbi', Arial, sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.english_texth,.english_textm{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.p_tag{
+  all: unsets;
+}
+
+.result_container{
+    position: relative; 
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#f0f0f0;
+}
+.watermark {
+  position: absolute; 
+  
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  z-index: 1; 
+  opacity: 0.2; 
+  width: 50%; 
+  
+  
+  pointer-events: none; 
+}
+
+.header{
+    padding: 0px;
+    margin: 0px;
+    width: 74.22%;
+    height: 17.6%;
+}
+.header_img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    object-fit:contain;
+}
+.result{
+    padding: 0px;
+    margin: 0px;
+    width: 74.22%;
+    height: 68.6%;
+    background-color: #f0f0f0;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.4);
+    /* display: flex;
+    flex-direction: column;
+    gap: 0px; */
+
+}
+.row2{
+    width: 98%;
+    height: 18.6%;
+    background-color:#f3bb9e;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+    
+}
+.row2>.text_container>.kannda_texth{
+    font-size: 28px;
+    font-weight:100;
+    padding: 0px;
+    margin: 0px;
+}
+.row2>.text_container>.english_texth{
+    font-size: 20px;
+    /* font-weight: 100; */
+}
+
+.tag_row3{
+    width: 98%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+     border: 1px solid #bce8f1;
+     background-color: #fff;
+     border-radius:5px;
+     margin-bottom: 2%;
+}
+.details_container_result{
+    width: 100%;
+    /* height: 88.6%;   */
+
+    /* border: 1px solid #bce8f1; */
+    border-radius:5px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+}
+
+.result_details_tag{
+    width: 100%;
+    height: 23.5%;
+    background-color: #a4e5b0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px 5px 0px 0px;
+    padding: 10px 0px;
+    /* margin: 10px 0px; */
+   
+    
+}
+.result_details_tag>.kannda_textm{
+    font-size: 20px;
+    font-weight: 600;
+}
+.result_details_tag>.english_textm{
+    font-size: 15px;
+    font-weight: 575;
+}
+.result_details>.kannda_textm{
+    font-size: 20px;
+    font-weight: 600;
+}
+.result_details>.english_textm{
+    font-size: 15px;
+    font-weight: 575;
+}
+.input_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 50.7%;
+    
+}
+.usn_input{
+    all: unset;
+    text-decoration: none;
+    width: 95%;
+    height: 100%;
+    /* background-color:#bce8f1; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.usn{
+    width: 98%;
+    /* height: 4%; */
+}
+.cache_input{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+}
+.captache_div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.captache_holder{
+    display: block;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+.captache{
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+.code{
+    width: 87.2%;
+}
+.input{
+    height: 27px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+.code::placeholder{
+    font-size:14px ;
+}
+
+.refresh{
+    all: unset;
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+
+    /* object-fit: contain; */
+}
+.retry{
+    /* height: 40px; */
+    width: 23px;
+    object-fit: contain;
+}
+.button_container{
+    
+    display: block;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    margin: 5% 0px; 
+}
+.proceed{
+    all: unset;
+    width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.submit{
+    background-color: #a6d8a6;
+    border: 1px solid #398439;
+}
+.cancel{
+    background-color: #f29391;
+    border: 1px solid #ff0000;
+}
+
+.row4{
+    width: 100%;
+    height: 13%;
+    background-color: #494e54;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.row4>.kannda_textm{
+     font-size: 17px;
+}
+.row4>.english_textm{
+     font-size: 14px;
+}
+
+/* tables */
+
+
+
+.results-container {
+    position: relative;
+  font-family: Arial, sans-serif;
+  width: 95%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* --- Top Details Table --- */
+
+
+/* ... keep all other styles (.results-container, .marks-table, etc.) ... */
+
+/* --- Top Details Table (Student Info) --- */
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.details-table td {
+  padding: 8px 4px;
+  font-size: 1em;
+}
+
+.details-table .detail-label {
+  font-weight: 500;
+  width: 220px;
+}
+
+/* --- Divider --- */
+.divider {
+  border: 0;
+  border-top: 2px solid #e9e9e9;
+  margin: 20px 0;
+  
+}
+
+/* --- Main Marks Table --- */
+
+.semester-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  overflow-x: scroll;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.marks-table th,
+.marks-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  width: max-content;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+.marks-table th{
+     white-space: nowrap;
+     /* height: 2px; */
+     padding: 8px 12px;
+}
+
+#sub_name{
+    text-align: left;
+}
+
+.marks-table thead {
+  background-color: transparent;
+
+
+}
+
+/* ... keep all other styles (.results-container, .marks-table, etc.) ... */
+
+/* --- Top Details Table (Student Info) - REVISED STYLES --- */
+.details-table {
+  width: 100%;
+  border-collapse: collapse; /* Essential for controlling borders */
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0; /* Overall outer border for the table */
+}
+
+
+.details-table tr {
+  /* Default background for rows */
+
+  background-color: #fff;
+}
+
+.details-table tr:nth-child(even) {
+  /* Alternating row background for a subtle stripe, if desired.
+     Based on your image, it seems like the first row has a slight background too.
+     If you only want the second row to have it, remove this and use specific background for tr:first-child */
+  background-color: #fcfcfc; /* A very subtle off-white for even rows if needed */
+}
+
+.details-table td {
+  padding: 12px 15px; /* Adjust padding to match the image's spacing */
+  font-size: 1em;
+  vertical-align: middle;
+  border-bottom: 1px solid #e0e0e0; /* Only bottom border for cells */
+  background-color: inherit; /* Ensure background comes from the row */
+}
+
+/* Remove bottom border from the last row's cells */
+.details-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Style for the label column (e.g., "University Seat Number") */
+.details-table .detail-label {
+  font-weight: bold; /* Labels are bold */
+  width: 50%; /* Keep this for consistent column width */
+  color: #333;
+  /* Add a right border to separate label from value, like in the image */
+  border-right: 1px solid #e0e0e0;
+}
+
+/* bottom______________________________________ */
+.bottom_container{
+    margin: 4%;
+    width: 64%;
+    border: 1px solid #bce8f1;
+}
+
+.info-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  /* margin: 20px auto; */
+  border: 1px solid #cce5ff; /* Light blue border */
+  background-color:transparent; /* A very light grey background */
+  padding: 20px 0px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Legend Bar Styling --- */
+.legend-bar {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+/* This clever trick makes the borders of adjacent items overlap */
+.legend-item + .legend-item {
+  margin-left: -1px;
+}
+
+/* ... keep all other styles (.info-container, .legend-bar, etc.) ... */
+
+/* --- Notes Section Styling (REVISED) --- */
+.notes-section {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  text-align: left; /* Ensures all text starts from the far left */
+}
+
+/* Use a common class for consistent spacing */
+.notes-section .note-line,
+.notes-section .sub-note {
+  margin: 0 0 5px 0; /* Removes default margins and adds a small gap below */
+  padding: 0; /* Removes any default padding */
+}
+
+/* For indenting ONLY the sub-notes a) and b), as seen in the image */
+.notes-section .sub-note {
+  padding-left: 25px;
+}
+
+.bottom_result_details{
+    width: 100%;
+    height: 23.5%;
+    background-color: #a4e5b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px 5px 0px 0px;
+    padding: 10px 0px;
+    
+}
+.bottom_result_details>.kannda_textm{
+    font-size: 20px;
+    font-weight: 600;
+}
+.bottom_result_details>.english_textm{
+    font-size: 15px;
+    font-weight: 575;
+}
+
+.notes-section{
+    line-height: 0.8;
+}
+.note{
+            padding: 0px;
+            margin: 0px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 10px 0;
+
+        
+}
+
+.bottom_signature{
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signature-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin: 40px 0;
+          font-family: Arial, sans-serif;
+        }
+
+        .signature-line {
+          margin: 2px 0;
+          line-height: 1.2;
+        }
+
+        .kannada-text {
+          font-size: 16px;
+          color: #333;
+          font-weight: bold;
+
+
+        }
+
+        .english-text {
+          font-size: 16px;
+          color: #333;
+          font-weight: bold;
+
+        }
+
+        .registrar-title {
+          margin-top: 20px;
+          line-height: 1.3;
+        }
+
+        .kannada-title {
+          font-size: 16px;
+          color: #333;
+          margin: 2px 0;
+          font-weight: bold;
+        }
+
+        .english-title {
+          font-size: 16px;
+          color: #333;
+          margin: 2px 0;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+        }
+
+
+        .tag_button_container{
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2%;
+        }
+
+        .tag_submit{
+            width:14%;
+            padding: 7px 0px;
+            border-radius: 3px;
+
+        }
+        .print{
+            background-color: #9edee6;
+            border: 1px solid #269abc;
+        }
+
+        .back{
+            
+        background-color: #e46464;
+        border: 1px solid #ff0000;
+
+        }
+
+    .table-wrapper {
+  overflow-x: auto;
+  width: 100%; /* Ensure the wrapper takes up the full available width */
+}
