@@ -272,8 +272,9 @@
   /* Header adjustments */
   .header {
     width: 95% !important;
-    height: 12% !important;
-    margin-bottom: 5px !important;
+    height: 5% !important;
+    /* background-color:rebeccapurple; */
+    margin-bottom: 2px !important;
   }
 
   .header_img {
@@ -293,7 +294,7 @@
   .row2 {
     margin-top: 2px !important;
     height: 8% !important;
-    width: 100% !important;
+    width: 98% !important;
     background-color: #f3bb9e !important;
   }
 
@@ -307,13 +308,17 @@
   .row2 > .text_container > .english_texth {
     font-size: 8px !important;
     font-weight: normal !important;
+    
   }
 
   /* Row3 - Main content */
   .row3 {
     width: 100% !important;
     height: 75% !important;
-    padding: 5px !important;
+    padding: 5px 0px !important;
+    margin: 0px !important;
+    align-items: flex-start;
+
   }
 
   .details_container {
@@ -328,7 +333,7 @@
 
   /* Green header section */
   .result_details {
-    border-radius: 3px 3px 0px 0px !important;
+    border-radius: 2px 2px 0px 0px !important;
     height: 15% !important;
     background-color: #a4e5b0 !important;
   }
@@ -366,14 +371,12 @@
   }
 
   .input {
-    height: 14px !important;
+    height: 16px !important;
     border: 1px solid #cccccc !important;
     border-radius: 3px !important;
     font-size: 12px !important;
   }
-  .code{
-    height: ;
-  }
+
 
   .input::placeholder {
     font-family: Arial, Helvetica, sans-serif !important;
@@ -441,8 +444,8 @@
   }
 
   .retry {
-    width: 12px !important;
-    height: 12px !important;
+    width: 15px !important;
+    height: 15px !important;
     object-fit: contain !important;
   }
 
@@ -514,3 +517,22 @@
     text-align: center !important;
   }
 }
+
+.row4{
+    width: 95% !important;
+    height: 10% !important;
+    background-color: #494e54;
+    /* background-color:red !important; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+/* .row4>.kannda_textm{
+     font-size: 7px !important;
+}
+.row4>.english_textm{
+     font-size: 6px !important;
+} */

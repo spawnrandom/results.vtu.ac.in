@@ -610,3 +610,409 @@
   overflow-x: auto;
   width: 100%; /* Ensure the wrapper takes up the full available width */
 }
+
+
+@media screen and (max-width: 440px) {
+  /* Main container adjustments */
+  .result_page_container {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    padding: 8px !important;
+    background-color: #f0f0f0 !important;
+  }
+
+  /* Header adjustments */
+  .header {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 8px !important;
+  }
+
+  .header_img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 120px !important;
+    object-fit: contain !important;
+  }
+
+  /* Main result container */
+  .result {
+    width: 100% !important;
+    height: auto !important;
+    background-color: #f0f0f0 !important;
+    box-shadow: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+  }
+
+  /* Row2 - Title section */
+  .row2 {
+    margin-top: 0px !important;
+    height: auto !important;
+    width: 100% !important;
+    background-color: #f3bb9e !important;
+    padding: 8px 0px !important;
+  }
+
+  .row2 > .text_container > .kannda_texth {
+    font-size: 11px !important;
+    font-weight: 100 !important;
+    padding: 0px !important;
+    margin: 1px 0px !important;
+  }
+
+  .row2 > .text_container > .english_texth {
+    font-size: 9px !important;
+    font-weight: normal !important;
+    margin: 1px 0px !important;
+  }
+
+  /* Green examination details section */
+  .tag_row3 {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    border: 1px solid #bce8f1 !important;
+    border-radius: 3px !important;
+  }
+
+  .result_details_tag {
+    width: 100% !important;
+    height: auto !important;
+    background-color: #a4e5b0 !important;
+    padding: 6px 0px !important;
+    border-radius: 3px 3px 0px 0px !important;
+  }
+
+  .result_details_tag > .kannda_textm {
+    font-size: 8px !important;
+    font-weight: 600 !important;
+    margin: 1px 0px !important;
+  }
+
+  .result_details_tag > .english_textm {
+    font-size: 7px !important;
+    font-weight: 575 !important;
+    margin: 1px 0px !important;
+  }
+
+  /* Student details table section */
+  .details-table {
+    width: 100% !important;
+    font-size: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .details-table td {
+    padding: 6px 8px !important;
+    font-size: 8px !important;
+  }
+
+  .details-table .detail-label {
+    font-weight: 500 !important;
+    width: 45% !important;
+  }
+
+  /* Semester heading */
+  .semester-heading {
+    font-size: 8px !important;
+    margin: 8px 0px !important;
+    font-weight: bold !important;
+  }
+
+  /* Marks table */
+  .table-wrapper {
+    overflow-x: auto !important;
+    width: 100% !important;
+  }
+
+  .marks-table {
+    width: 100% !important;
+    /* min-width: 600px !important; */
+    border-collapse: collapse;
+    font-size: 8px !important;
+  }
+
+  /* .marks-table th,
+  .marks-table td {
+    padding: 4px 3px !important;
+    font-size: 8px !important;
+    border: 1px solid #ddd !important;
+  } */
+  .marks-table th,
+ .marks-table td {
+   padding: 4px 3px !important;
+   font-size: 6px !important;
+   border: 1px solid #ddd !important;
+   /* ADDED properties to allow text wrapping in ALL cells */
+   white-space: normal !important;
+   word-break: break-word; /* Breaks long words to prevent overflow */
+ }
+
+ .marks-table th {
+   font-weight: 600 !important;
+   /* REMOVED white-space: nowrap; to allow headers to wrap */
+ }
+
+  #sub_name {
+  width: 35%; /* GIVING a larger width to the subject name column */
+   text-align: left !important;
+  }
+
+  /* Bottom container - Nomenclature section */
+  .bottom_container {
+    width: 100% !important;
+    margin: 8px 0px !important;
+    border: 1px solid #bce8f1 !important;
+    border-radius: 3px !important;
+  }
+
+   .marks-table td:first-child {
+    text-align: left !important;
+    white-space: normal !important; /* Explicitly allow wrapping */
+ }
+  .bottom_result_details {
+    width: 100% !important;
+    height: auto !important;
+    background-color: #a4e5b0 !important;
+    padding: 2px 0px !important;
+    border-radius: 3px 3px 0px 0px !important;
+  }
+
+  .bottom_result_details > .kannda_textm {
+    font-size: 8px !important;
+    font-weight: 600 !important;
+    margin: 1px 0px !important;
+  }
+
+  .bottom_result_details > .english_textm {
+    font-size: 7px !important;
+    font-weight: 575 !important;
+    margin: 1px 0px !important;
+  }
+
+  /* Legend bar */
+  .legend-bar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 4px 0px !important;
+  }
+
+  .legend-item {
+    padding: 4px 8px !important;
+    font-size: 8px !important;
+    border: 1px solid #ccc !important;
+    background-color: #fff !important;
+    white-space: nowrap !important;
+  }
+
+  /* Notes section */
+  .notes-section {
+    font-size: 8px !important;
+    line-height: 1.2 !important;
+    padding: 8px !important;
+  }
+
+  .note {
+    padding: 0px !important;
+    margin: 3px 0px !important;
+    font-size: 8px !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+  }
+
+  .notes-section .sub-note {
+    padding-left: 15px !important;
+    margin: 2px 0px !important;
+    font-size: 8px !important;
+  }
+
+  /* Signature section */
+  .bottom_signature {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding: 8px !important;
+  }
+
+  .signature-container {
+    margin: 15px 0px !important;
+  }
+
+  .kannada-text,
+  .english-text {
+    font-size: 10px !important;
+  }
+
+  .kannada-title,
+  .english-title {
+    font-size: 9px !important;
+  }
+
+  /* Button container - COLUMN LAYOUT */
+  .tag_button_container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+    margin: 5px 0px !important;
+    padding: 8px !important;
+  }
+
+  .tag_submit {
+    width: 100% !important;
+    padding: 5px 0px !important;
+    border-radius: 3px !important;
+    font-size: 7px !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    cursor: pointer !important;
+  }
+
+  .back {
+    background-color: #e46464 !important;
+    border: 1px solid #ff0000 !important;
+    /* color: white !important; */
+  }
+
+  .print {
+    background-color: #9edee6 !important;
+    border: 1px solid #269abc !important;
+    color: black !important;
+  }
+
+  /* Footer section */
+  .row4 {
+    width: 100% !important;
+    height: auto !important;
+    background-color: #494e54 !important;
+    color: white !important;
+    padding: 8px !important;
+    margin-top: 8px !important;
+  }
+
+  .row4 > .kannda_textm {
+    font-size: 7px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    margin: 1px 0px !important;
+  }
+
+  .row4 > .english_textm {
+    font-size: 6px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    margin: 1px 0px !important;
+  }
+
+  /* Watermark adjustments */
+  .watermark {
+    width: 50% !important;
+    opacity: 0.1 !important;
+  }
+
+  /* Responsive results container */
+  .results-container {
+    width: 100% !important;
+    margin: 8px auto !important;
+    padding: 8px !important;
+    font-size: 8px !important;
+  }
+
+  /* Divider */
+  .divider {
+    margin: 8px 0px !important;
+  }
+
+  /* Info container adjustments */
+  .info-container {
+    width: 100% !important;
+    padding: 2px !important;
+    margin: 0px !important;
+  }
+
+
+
+  .info-container {
+    padding: 2px !important; 
+    ;/* Standardized padding */
+}
+
+/* This is the key change for the legend */
+.legend-bar {
+    display: flex !important;
+    flex-wrap: nowrap !important;      /* PREVENTS wrapping */
+    /* overflow-x: auto !important;     ADDS horizontal scroll if needed */
+    padding-bottom: 5px;             /* Adds a little space for the scrollbar */
+    margin-bottom: 12px !important;
+     width: 90%;
+}
+
+/* Makes legend items slightly smaller */
+.legend-item {
+    padding: 2px 6px !important;
+    font-size: 4px !important;      /* Reduced font size */
+    flex-shrink: 0;                 /* Stops items from shrinking */
+    white-space: nowrap !important;
+   
+}
+
+/* Adjustments for the notes section */
+.notes-section {
+    padding: 0px 2px !important;
+    font-size: 5px !important;     /* Slightly smaller base font */
+    line-height: 1.2!important;    /* Improved line spacing for readability */
+    
+}
+
+/* Styles for each line of the note */
+.note {
+    padding: 0 !important;
+    margin: 1px 0 !important;      /* Reduced space between lines */
+    font-weight: bold !important;
+     font-size: 5px !important; 
+     
+}
+
+/* Make the first "Note :" line bold again */
+.notes-section > p.note:first-of-type {
+    font-weight: bold !important;
+}
+
+.bottom_container{
+  width: 88%!important;
+  overflow: hidden;
+}
+.bottom_signature{
+    width: 90% !important;
+    display: flex;
+    justify-content: flex-end;
+}
+  .signature-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin: 10px 0 !important;
+          font-family: Arial, sans-serif;
+        }
+
+              .signature-line {
+          margin: 0px 0;
+          line-height: 1!important;
+        }
+  .kannada-text,
+  .english-text {
+    font-size: 6px !important;
+  }
+
+  .kannada-title,
+  .english-title {
+    font-size: 5px !important;
+  }
+
+}

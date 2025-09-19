@@ -102,8 +102,69 @@ const Result = () => {
           </div>
 
           <div className="bottom_container">
-            {/* ... Your existing JSX for Abbreviations, Notes, Signature ... */}
+
+  <div className="bottom_result_details">
+
+<p className="kannda_textm"> ನಾಮಕರಣ / ಸಂಕ್ಷೇಪಣಗಳು</p>
+
+<p className="english_textm">Nomenclature / Abbreviations</p>
+
+  </div>
+
+
+
+  <div className="info-container">
+
+<div className="legend-bar">
+
+  <div className="legend-item">P -> PASS</div>
+
+<div className="legend-item">F -> FAIL</div>
+
+<div className="legend-item">A -> ABSENT</div>
+
+   <div className="legend-item">W -> WITHHELD</div>
+
+  <div className="legend-item">X, NE -> NOT ELIGIBLE</div>
+
+  </div>
+
+
+
+  <div className="notes-section">
+
+  <p className='note'>Note :</p>
+
+  <p className='note'>1) Results of some subjects of some students are not appearing due to reasons such as,</p>
+
+  <p className='note'>a) CIE not Available</p>
+
+  <p className='note'>b) SEE not available</p>
+
+  <p className='note'>because of technical reasons etc, however they will be updated shortly.</p>
+
+  <p className='note'>2) Withheld results to be announced later.</p>
+</div>
+
+  </div>
+
           </div>
+
+          <div className="bottom_signature">
+        <div className="signature-container">
+          <div className="signature-line">
+            <span className="kannada-text">ಸಹಿ/-</span>
+          </div>
+          <div className="signature-line">
+            <span className="english-text">Sd/-</span>
+          </div>
+          <div className="registrar-title">
+            <div className="kannada-title">ಫಲಿತಸಜಿವರು (ಮೌಲ್ಯಮಾಪನ)</div>
+            <div className="english-title">REGISTRAR (EVALUATION)</div>
+          </div>
+        </div>
+        </div>
+
 
           <div className="tag_button_container">
             <button
@@ -119,6 +180,8 @@ const Result = () => {
               ಮುದ್ರಣ / PRINT
             </button>
           </div>
+
+          
 
           <div className="row4 row">
             <p className="kannda_textm">© ೨೦೨೫ ವಿನ್ಯಾಸ ಮತ್ತು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದವರು ಯೋಜನಾ ನಿರ್ವಹಣೆ ವಿಭಾಗ (ಪಿ. ಎಂ. ಸಿ), ವಿ.ತಾ.ವಿ, ಬೆಳಗಾವಿ. ಕರ್ನಾಟಕ. ಭಾರತ.</p>
