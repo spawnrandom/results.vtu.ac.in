@@ -48,8 +48,8 @@ const Result = () => {
         <div className="tag_row3 row">
           <div className="details_container_result">
             <div className="result_details_tag">
-              <p className="kannda_textm">ವಿ.ತಾ.ವಿ ಪದವಿ / ಸ್ನಾತಕೋತ್ತರ ಪದವಿ ಪರೀಕ್ಷೆಯ ನಾಮಯುಕ್ತ ಫಲಿತಾಂಶ ಡಿಸೆಂಬರ್-೨೦೨೪ / ಜನವರಿ-೨೦೨೫.</p>
-              <p className="english_textm">VTU PROVISIONAL RESULTS OF UG / PG December-2024 / January-2025 EXAMINATION.</p>
+              <p className="kannda_textm"> ವಿ.ತಾ.ವಿ ಪದವಿ / ಸ್ನಾತಕೋತ್ತರ ಪದವಿ ಪರೀಕ್ಷೆಯ ನಾಮಯುಕ್ತ ಫಲಿತಾಂಶ ಜೂನ್ / ಜುಲೈ-೨೦೨೫.</p>
+              <p className="english_textm">VTU PROVISIONAL RESULTS OF UG / PG June / July-2025 EXAMINATION.</p>
             </div>
 
             <div className="results-container">

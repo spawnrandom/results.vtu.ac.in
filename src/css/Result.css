@@ -701,7 +701,7 @@
 
   /* Student details table section */
   .details-table {
-    width: 100% !important;
+    width: 98% !important;
     font-size: 8px !important;
     margin-bottom: 8px !important;
   }
@@ -730,7 +730,7 @@
   }
 
   .marks-table {
-    width: 100% !important;
+    width: 98% !important;
     /* min-width: 600px !important; */
     border-collapse: collapse;
     font-size: 8px !important;
@@ -916,7 +916,7 @@
 
   /* Responsive results container */
   .results-container {
-    width: 100% !important;
+    width: 94% !important;
     margin: 8px auto !important;
     padding: 8px !important;
     font-size: 8px !important;

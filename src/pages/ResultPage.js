@@ -95,8 +95,8 @@ const ResultPage = () => {
         <div className="row3 row">
           <div className="details_container">
             <div className="result_details">
-              <p className="kannda_textm">ಡಿಸೆಂಬರ್-೨೦೨೪ / ಜನವರಿ-೨೦೨೫ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ.</p>
-              <p className="english_textm">December-2024 / January-2025 EXAMINATION RESULTS.</p>
+              <p className="kannda_textm">ಜೂನ್ / ಜುಲೈ-೨೦೨೫ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ.</p>
+              <p className="english_textm">June/July-2025 EXAMINATION RESULTS.</p>
             </div>
 
             <div className="input_details">
