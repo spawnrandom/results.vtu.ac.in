@@ -5,6 +5,7 @@
   font-style: normal;
 }
 
+
 .kannda_texth,
 .kannda_textm {
   font-family: 'Gubbi', Arial, sans-serif;
@@ -260,4 +261,256 @@
 .row4>.english_textm{
      font-size: 14px;
 }
+@media screen and (max-width: 440px) {
+  /* Main container adjustments */
+  .result_page_container {
+    width: 100% !important;
+    height: 100vh !important;
+    padding: 5px !important;
+  }
 
+  /* Header adjustments */
+  .header {
+    width: 95% !important;
+    height: 12% !important;
+    margin-bottom: 5px !important;
+  }
+
+  .header_img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  /* Main result container */
+  .result {
+    width: 95% !important;
+    height: 45% !important;
+    gap: 2px !important;
+  }
+
+  /* Row2 - Title section */
+  .row2 {
+    margin-top: 2px !important;
+    height: 8% !important;
+    width: 100% !important;
+    background-color: #f3bb9e !important;
+  }
+
+  .row2 > .text_container > .kannda_texth {
+    font-size: 10px !important;
+    font-weight: 100 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .row2 > .text_container > .english_texth {
+    font-size: 8px !important;
+    font-weight: normal !important;
+  }
+
+  /* Row3 - Main content */
+  .row3 {
+    width: 100% !important;
+    height: 75% !important;
+    padding: 5px !important;
+  }
+
+  .details_container {
+    width: 98% !important;
+    height: 88% !important;
+    border: 1px solid #bce8f1 !important;
+    border-radius: 3px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: #fff !important;
+  }
+
+  /* Green header section */
+  .result_details {
+    border-radius: 3px 3px 0px 0px !important;
+    height: 15% !important;
+    background-color: #a4e5b0 !important;
+  }
+
+  .result_details > .kannda_textm {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+  }
+
+  .result_details > .english_textm {
+    font-size: 7px !important;
+    font-weight: 575 !important;
+  }
+
+  /* Input section */
+  .input_details {
+    height: 60% !important;
+    width: 100% !important;
+    padding-top: 10px !important;
+    /* padding-bottom: 5px; */
+    gap: 8px !important;
+    justify-content: flex-start !important;
+    /* align-items: ; */
+  }
+
+  .usn_input {
+    width: 95% !important;
+    height: 12% !important;
+    justify-content: center !important;
+  }
+
+  .usn {
+    width: 98% !important;
+    height: 80% !important;
+  }
+
+  .input {
+    height: 14px !important;
+    border: 1px solid #cccccc !important;
+    border-radius: 3px !important;
+    font-size: 12px !important;
+  }
+  .code{
+    height: ;
+  }
+
+  .input::placeholder {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 7px !important;
+  }
+
+  /* Captcha section */
+  .cache_input {
+    width: 95% !important;
+    height: 40% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+    align-items: center !important;
+  }
+
+  .captache_div {
+    width: 100% !important;
+    display: flex !important;
+    height: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 3px !important;
+  }
+
+  .captache_enter {
+    background-color: transparent !important;
+    height: 14px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .code {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .captache_holder {
+    width: 100% !important;
+    height: max-content !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 0px !important;
+    background-color: transparent !important;
+  }
+
+  .captache {
+    width: 35% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .refresh {
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    padding: 0px !important;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    cursor: pointer !important;
+  }
+
+  .retry {
+    width: 12px !important;
+    height: 12px !important;
+    object-fit: contain !important;
+  }
+
+  /* Button section */
+  .button_container {
+    width: 98% !important;
+    height: max-content !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 5px !important;
+    margin: 0px !important;
+  }
+
+  .proceed {
+    width: 100% !important;
+    height: max-content !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    gap: 0px !important;
+  }
+
+  .submit {
+    background-color: #a6d8a6 !important;
+    border: 1px solid #398439 !important;
+  }
+
+  .cancel {
+    background-color: #f29391 !important;
+    border: 1px solid #ff0000 !important;
+  }
+
+  /* Footer section */
+  .row4 {
+    width: 100% !important;
+    height: 15% !important;
+    background-color: #494e54 !important;
+    color: white !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 5px !important;
+  }
+
+  .row4 > .kannda_textm {
+    font-size: 8px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+  }
+
+  .row4 > .english_textm {
+    font-size: 7px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Error message styling */
+  .error_message {
+    color: red !important;
+    font-size: 10px !important;
+    margin: 5px 0px !important;
+    text-align: center !important;
+  }
+}
